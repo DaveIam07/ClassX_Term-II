@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #welcome {
+            border: 1px solid #333;
+            background-color: green;
+        }
+
+        #welcome h1 {
+            font-size: 8vw;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #f1f1f1;
+            padding: 0.8%;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #navlist {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        #navlist li {
+            /* background-color: #333; */
+            float: left;
+        }
+
+        #navlist li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            text-decoration: none;
+        }
+        .active{
+            background-color: #008CBA;
+        }
+    </style> -->
+</head>
+
+<body onload="personalise()">
+    <div id="welcome">
+        <h1>Welcome <span id="name" contenteditable="true"
+                onkeyup="localStorage.setItem('name', document.getElementById('name').innerHTML);">
+                *Enter name here*</span></h1>
+    </div>
+    <ul id="navlist">
+        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="#">Subjects:</a></li>
+        <li><a href="Maths.html">Maths</a></li>
+        <li><a href="IT.html">IT</a></li>
+        <li><a href="SS.html">SS</a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <div id="content">
+        <h1 style="font-size: 16vw;">I'm BORED</h1>
+        <!-- <p> Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            Doo-bee-doo-bee-do-bah <br>
+            
+        </p> -->
+    </div>
+</body>
+<script>
+    function personalise() {
+        if (localStorage.getItem('name')) {
+            document.getElementById('name').innerHTML = localStorage.getItem('name')
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body onload="document.getElementById('input').innerHTML = localStorage.getItem('code'); preview()">
+    <div id="subject">
+        <h1>IT</h1>
+    </div>
+    <ul id="navlist">
+        <li ><a href="Home.html">Home</a></li>
+        <li><a href="#">Subjects:</a></li>
+        <li><a href="#">Maths</a></li>
+        <li class="active"><a href="IT.html">IT</a></li>
+        <li><a href="SS.html">SS</a></li>
+        <li style="float: right;"><a href="#">More</a></li>
+    </ul>
+    <h2 style="display: inline;">Msg:</h2><p style="display: inline;">Hey soo, I have already tried to explain IT and if you didn't understand that, maybe try with ma'am or we can meet in school (I'm bored) </p> <br>
+    <h2 style="display: inline;">Desc:</h2><p style="display: inline;">You can like test your code below and get a live preview. Your code won't be deleted when you leave the site!</p>
+    
+    <textarea name="input" id="input" rows="10" cols="30" onkeyup="preview()" placeholder="Write your code here"
+    autofocus></textarea>
+    <br>
+    <div id="output"></div>
+    
+</body>
+
+<script>
+    function preview() {
+        document.getElementById('output').innerHTML = document.getElementById('input').value;
+        localStorage.setItem("code", document.getElementById('input').value);
+    }
+</script>
+
+</html>
